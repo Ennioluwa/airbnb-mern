@@ -1,10 +1,17 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 
 dotenv.config();
 
+const clientUrl = process.env.CLIENT_URL;
 const app: Express = express();
-const port = process.env.PORT;
+app.use(
+  cors({
+    credentials: true,
+    origin: clientUrl,
+  })
+);
 
 app.get("/", (req: Request, res: Response) => {
   res.send("New express with typescript included server");
