@@ -11,7 +11,18 @@ const RegisterPage = () => {
         </p>
         <div className="p-5 flex flex-col gap-4">
           <p className=" text-xl py-2">Welcome to Airbnb</p>
-          <input type="text" placeholder="Name" className="input-primary" />
+          <div className="flex gap-4 items-center justify-between">
+            <input
+              type="text"
+              placeholder="First Name"
+              className="input-primary"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className="input-primary"
+            />
+          </div>
           <input type="text" placeholder="Email" className="input-primary" />
           <input type="text" placeholder="Password" className="input-primary" />
           <button className=" btn-primary">Continue</button>

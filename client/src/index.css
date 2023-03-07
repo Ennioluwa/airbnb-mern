@@ -9,5 +9,5 @@
     @apply border border-black text-black rounded-2xl py-3 px-6
 }
 .input-primary {
-    @apply border border-gray-400 text-black rounded-2xl py-3 px-3
+    @apply grow border border-gray-400 text-black rounded-2xl py-3 px-3
 }
