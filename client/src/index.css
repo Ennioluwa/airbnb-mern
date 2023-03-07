@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-primary {
+    @apply bg-primary py-3 text-white rounded-2xl
+}
+.btn {
+    @apply border border-black text-black rounded-2xl py-3 px-6
+}
+.input-primary {
+    @apply border border-gray-400 text-black rounded-2xl py-3 px-3
+}
