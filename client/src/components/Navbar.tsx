@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../context/UserContext";
 
 const Navbar = () => {
+  const { user } = useContext(UserContext) as any;
+
   return (
     <nav className=" flex -mx-5 mb-5  items-center justify-between gap-3 border-y border-gray-300 py-3 px-10">
       <Link to={"/"} className=" flex gap-1 items-center text-primary">
@@ -61,7 +64,7 @@ const Navbar = () => {
           />
         </svg>
         <Link
-          to={"/login"}
+          to={user ? "/profile" : "/login"}
           className=" flex items-center justify-center gap-3 border border-gray-300 p-2 rounded-full shadow-md"
         >
           <svg
@@ -92,6 +95,7 @@ const Navbar = () => {
               />
             </svg>
           </div>
+          {!!user && <p>{user.firstName}</p>}
         </Link>
       </div>
     </nav>

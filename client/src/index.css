@@ -3,11 +3,23 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply bg-primary py-3 text-white rounded-2xl
+    @apply bg-primary py-2 px-4 text-white rounded-full grow w-full
+}
+.btn-gray {
+    @apply bg-gray-200 py-2 px-4 text-white rounded-full
 }
 .btn {
     @apply border border-black text-black rounded-2xl py-3 px-6
 }
-.input-primary {
+.input-primary, .checkin input{
     @apply grow border border-gray-400 text-black rounded-2xl py-3 px-3
+}
+textarea {
+    @apply w-full border my-1 py-2 px-3 rounded-2xl
+}
+.perks label {
+    @apply border p-4 flex rounded-2xl gap-2 items-center cursor-pointer
+}
+.perks svg {
+
 }

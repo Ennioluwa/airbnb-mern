@@ -3,7 +3,7 @@ import { Navbar } from "../components";
 
 const Homepage = () => {
   return (
-    <main className=" h-screen w-screen bg-blue-300">
+    <main className=" grow w-full bg-blue-300">
       <div>hello</div>
     </main>
   );
